@@ -13,3 +13,36 @@ div.d-flex {
     flex-wrap: nowrap;
     justify-content: flex-end;
 }
+
+/* Sharp Buttons */
+.btn-group-lg>.btn, .btn-lg {
+    border-radius: 0;
+    border-width: 3px;
+}
+
+div.mx-auto > h2 {
+    
+}
+
+/* Navbar */
+nav.bg-dark {
+    background-color: #000!important;
+    border-bottom: white 3px solid;
+}
+
+/* Navbar Links */
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.5);
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* Section and header padding */
+header {
+    padding: 156px 0 100px;
+}
+section {
+    padding: 150px 0;
+}
+  
