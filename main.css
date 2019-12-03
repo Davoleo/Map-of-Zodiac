@@ -1,0 +1,15 @@
+body {
+    font-family: "Roboto Condensed";
+    color: white;
+    background-color: black;
+}
+
+h1.display-4 {
+    font-size: 4em;
+}
+
+div.d-flex {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
