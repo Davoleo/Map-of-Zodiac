@@ -4,27 +4,6 @@ body {
     background-color: black;
 }
 
-h1.display-4 {
-    font-size: 4em;
-}
-
-div.d-flex {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-}
-
-/* Sharp Buttons */
-.btn-group-lg>.btn, .btn-lg {
-    border-radius: 0;
-    border-width: 3px;
-    width: 100%;
-}
-
-div.mx-auto > h2 {
-    
-}
-
 /* Navbar */
 nav.bg-dark {
     background-color: #000!important;
@@ -39,15 +18,62 @@ nav.bg-dark {
     color: rgb(255, 255, 255);
 }
 
-/* Section and header padding */
+/* Section and header */
 header {
-    padding: 156px 0 100px;
+    margin-top: 150px;
 }
 section {
-    padding: 150px 0;
+    margin: 100px 0;
+}
+
+section div.container {
+    text-align: center;
+}
+
+h1.display-4 {
+    font-size: 4em;
+}
+
+div.d-flex {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+/* Download Button */
+a > img {
+    width: 25px;
+    filter: invert(100%);
+    transition: 0.2s;
+    margin-right: 10px;
+}
+
+a:hover > img {
+    filter: invert(0);
+}
+
+/* Sharp Buttons */
+.btn-group-lg>.btn, .btn-lg {
+    border-radius: 0;
+    border-width: 3px;
+    width: 100%;
+}
+
+.btn:focus {
+    outline: none!important;
 }
 
 /* Game Logo */
-#game-logo {
+.GameLogoBig {
     width: 75%;
+    height: 75%;
+}
+
+.GameLogoSmall {
+    width: 75%;
+    height: 75%;
+}
+
+#discord-tag {
+    color: #007bff;
 }

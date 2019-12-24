@@ -43,7 +43,7 @@
     
     <header class="text-white">
         <div class="container d-flex flex-row justify-content-center">
-            <img id="game-logo" src="res/logo.png" alt="GAME_LOGO">
+            <img class="GameLogoBig GameLogoSmall" src="res/logo.png" alt="GAME_LOGO">
         </div>
     </header>
 
@@ -53,7 +53,7 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2>About</h2>
-                    <p class="lead">Map of Zodiac is an online multiplayer turn based strategy game inspired by classic board games. Your objective in MoZ is to defeat your opponent, a player just like you. To do that you will utilize card-like objects called "Runes". These runes have a unique property to combine with one another, and gain new abilities. You can view detailed or short descriptions of Runes and learn about their combinations with other runes. The game is in early alpha, early builds might still be unstable.</p>
+                    <p class="lead">Map of Zodiac is an <strong>online multiplayer turn based strategy game</strong> inspired by classic board games. Your objective in MoZ is to <strong>defeat your opponent</strong>, a player just like you. To do that you can use card-like objects called "Runes". These runes have a unique property to combine with one another, and gain new abilities. You can view detailed or short descriptions of Runes and learn about their combinations with other runes. The game is in early alpha, early builds might still be unstable.</p>
                 </div>
             </div>
         </div>
@@ -65,8 +65,9 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2>Download the Game</h2>
-                    <!-- <button class="btn btn-lg btn-outline-light">Download</button> --> 
-                    <a href="http://bit.ly/MoZ_download" class="btn btn-lg btn-outline-light">Download</a>
+                    <a id="download-button" href="#" class="btn btn-lg btn-outline-light">
+                        <img src="res/windows-brands.svg" alt="windows-logo">Latest Version: 
+                    </a> 
                 </div>
             </div>
         </div>
@@ -88,7 +89,8 @@
       <!-- Footer -->
     <footer class="pt-5 pb-1">
         <div class="container">
-            <p class="m-0 text-center text-white">Game: Made by <a href="https://github.com/Klazkin">Matpac</a> (Discord:Matpac#8102)</p>
+            <p class="m-0 text-center text-white">Total Downloads: </p>
+            <p class="m-0 text-center text-white">Game: Made by <a href="https://github.com/Klazkin">Matpac</a> - Discord: <span id="discord-tag">Matpac#8102</span></p>
             <p class="m-0 text-center text-white">Website: Designed & Coded by <a href="https://github.com/Davoleo">Davoleo</a></p>
         </div>
     </footer>
@@ -98,6 +100,9 @@
     <!-- JQuery | PopperJS | BootstrapJS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>è 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Custom JS Script -->
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
