@@ -6,6 +6,7 @@ function getLatestVersion() {
     .then(res => res.json())
     .then(res => {
         button.innerHTML = button.innerHTML + " " + res.tag_name;
+        button.setAttribute("href", res.assets[0].browser_download_url);
     })
 }
 
