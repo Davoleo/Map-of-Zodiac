@@ -64,6 +64,10 @@ a:hover > img {
     filter: invert(0);
 }
 
+section#download div.col-4 {
+    margin-top: 1rem;
+}
+
 /* Sharp Buttons */
 .btn-group-lg>.btn, .btn-lg {
     border-radius: 0;
