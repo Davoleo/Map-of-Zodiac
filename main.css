@@ -24,7 +24,10 @@ header {
 }
 
 section {
-    margin: 100px 0;
+    margin: 50px 0;
+
+    /* Fixes anchor links leading to the wrong part */ 
+    padding-top: 100px;
 }
 
 section div.container {
