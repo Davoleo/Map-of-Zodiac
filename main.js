@@ -4,6 +4,9 @@ var buttonLinux = document.getElementById("linux-download-button");
 
 var counterParagraph = document.querySelector('footer p');
 
+var navContent = document.querySelector("ul.nav");
+var hamburger = document.querySelector("nav>img");
+
 function getLatestVersion() {
     fetch(`https://api.github.com/repos/Davoleo/Map-of-Zodiac/releases/latest`, {method: 'GET'})
     .then(res => res.json())
@@ -51,3 +54,13 @@ function getDownloadCount() {
 getLatestVersion();
 
 getDownloadCount();
+
+function hideShowSidebarContent() {
+    if (document.body.clientWidth > 800) {
+        navContent.classList.toggle("Hidden");
+        hamburger.classList.toggle("Hidden");
+    }
+}
+
+navContent.parentElement.addEventListener("mouseenter", hideShowSidebarContent);
+navContent.parentElement.addEventListener("mouseleave", hideShowSidebarContent);
