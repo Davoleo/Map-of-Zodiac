@@ -43,12 +43,18 @@ function getDownloadCount() {
 
         response.forEach(release => {
             release.assets.forEach( asset => {
-                count += asset.download_count;
+                if (isExecAsset)
+                    count += asset.download_count;
             });
         });
 
         counterParagraph.textContent = counterParagraph.textContent + " " + count;
     })
+}
+
+function isExecAsset(asset) {
+    let name = asset.name;
+    return (name.indexOf(".WIN") != -1 || name.indexOf(".OSX") != -1 || name.indexOf(".LIN") != -1);
 }
 
 getLatestVersion();
