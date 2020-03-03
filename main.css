@@ -177,3 +177,14 @@ section#download div.col-4 {
 ::-webkit-scrollbar-thumb {
     background-color: #FFF;
 }
+
+/* Custom Selection Color */
+::-moz-selection {
+    color: #000;
+    background-color: #FFF;
+}
+
+::selection {
+    color: #000;
+    background-color: #FFF;
+}
